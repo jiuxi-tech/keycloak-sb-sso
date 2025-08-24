@@ -111,4 +111,10 @@ public class SmsAccountServiceImpl implements SmsAccountService {
         // 生成验证码并发送
         return abstractValidateCode.create(phone);
     }
+
+    @Override
+    public AccountVO queryAccountByUsername(String userName) {
+        // 对于短信登录服务，用户名通常是手机号
+        return queryPersonByPhone(userName);
+    }
 }

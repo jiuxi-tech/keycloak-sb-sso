@@ -217,7 +217,7 @@ localtion:
 keycloak:
   sso:
     # 启用 Keycloak SSO
-    enabled: false
+    enabled: true
     # Keycloak 服务器地址
     server-url: http://localhost:8180
     # Realm 名称
@@ -225,7 +225,7 @@ keycloak:
     # 客户端 ID
     client-id: ps-be
     # 客户端密钥（如果需要）
-    client-secret: xMXvDGzby4Z48szob7i2fuZlZy5Wlqrh
+    client-secret: CVvpRldGT6z7UliBbtWObvCa7eP9ZRwr
     # 回调重定向配置
     redirect:
       # 登录成功后重定向地址
